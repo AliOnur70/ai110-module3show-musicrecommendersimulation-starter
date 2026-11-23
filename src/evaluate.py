@@ -7,7 +7,7 @@ EXPERIMENT_WEIGHTS = {"genre": 1.0, "energy": 2.0}
 
 
 def main() -> None:
-    """Print the baseline and weight-shifted rankings side by side."""
+    """Print the baseline and updated rankings one after the other."""
     songs = load_songs("data/songs.csv")
     for label, weights in (("Baseline", None), ("Energy-focused experiment", EXPERIMENT_WEIGHTS)):
         print(f"\n{label}:")
